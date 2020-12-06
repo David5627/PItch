@@ -6,7 +6,7 @@ class Config:
     Parent config
     """
     SQLALCHEMY_TRACK_MODIFICATIONS = True
-    SECRET_KEY='boyfriend'
+    SECRET_KEY='SECRET_KEY'
     UPLOADED_PHOTOS_DEST = 'app/static/photos'
     MAIL_SERVER = 'smtp.gmail.com'
     MAIL_PORT = 465
