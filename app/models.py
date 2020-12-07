@@ -16,6 +16,7 @@ class User(UserMixin, db.Model):
     comment = db.relationship('Comment', backref='user', lazy='dynamic')
     upvote = db.relationship('Upvote', backref='user', lazy='dynamic')
     downvote = db.relationship('Downvote', backref='user', lazy='dynamic')
+    phonenumber=db.Column(db.String(255))
 
     @property
     def set_password(self):
@@ -73,6 +74,7 @@ class Comment(db.Model):
 
     @classmethod
     def get_comments(cls, pitch_id):
+
         comments = Comment.query.filter_by(pitch_id=pitch_id).all()
 
         return comments
@@ -98,7 +100,7 @@ class Upvote(db.Model):
         return upvote
 
     def __repr__(self):
-        return f'{self.user_id}:{self.pitch_id}'
+        return f'{self.user_id}:{self.pitch_id} '
 
 
 class Downvote(db.Model):
