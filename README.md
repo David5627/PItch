@@ -1,6 +1,6 @@
 # PITCH
 
-## Author
+# Author
  ## DAVID KILONZO
 
 ## Description
