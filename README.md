@@ -1,7 +1,7 @@
 # PITCH
 
 ## Author
-* DAVID KILONZO
+ ## DAVID KILONZO
 
 ## Description
 This app allows the user to view various pitch categories and then select the best pitch they would like to view or read and also can allow users to write pitches of their own categories.  
